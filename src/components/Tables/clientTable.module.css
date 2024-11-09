@@ -1,0 +1,67 @@
+.tableContainer {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  max-width: 250px;
+  padding: 10px;
+  grid-gap: 0;
+}
+
+.tableRowContent {
+  height: 50px;
+  display: flex;
+  max-width: 100px;
+  align-items: center;
+  padding: 24px;
+  border: 1px solid black;
+}
+
+.tableRowContentDisabled {
+  height: 50px;
+  border-top: none;
+}
+
+.inputsContainer {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.inputsWrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.keratometryContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.keratometryWrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.keratometryInput {
+  max-width: 50px;
+}
+
+.submitClientTable {
+  border: 2px solid rgb(1, 50, 32);
+  background-color: rgb(1, 50, 32);
+  color: white;
+  padding: 8px 16px;
+  margin-top: 32px;
+  font-size: 14px;
+  border-radius: 32px;
+  transition: all 150ms ease;
+}
+.submitClientTable:hover {
+  background-color: transparent;
+  color: rgb(1, 50, 32);
+}

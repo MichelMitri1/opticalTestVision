@@ -1,0 +1,52 @@
+.navbarContainer {
+  padding: 40px 0;
+  width: 100%;
+  background-color: #3b7390;
+  color: white;
+}
+
+.companyName {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.navbarWrapper {
+  display: flex;
+  align-items: center;
+  max-width: 1500px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.navLinksWrapper {
+  display: flex;
+  gap: 32px;
+}
+
+.navlink {
+  font-size: 18px;
+}
+
+.dropdownLinkWrapper,
+.dropdownLinkWrapperLarge,
+.dropdownLinkWrapperSmall {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateX(-32px);
+  gap: 16px;
+  padding: 4px 16px;
+  border-radius: 4px;
+  box-shadow: 20px 10px 20px 0px #184155;
+  text-align: center;
+  background-color: #2f6682;
+  position: absolute;
+}
+
+.dropdownLinkWrapperLarge {
+  transform: translateX(-64px);
+}
+
+.dropdownLinkWrapperSmall {
+  transform: translateX(-24px);
+}

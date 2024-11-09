@@ -1,0 +1,432 @@
+.customerWrapper {
+  width: 100%;
+  background-color: #3b7390;
+  min-height: 100vh;
+}
+
+.itemsContainer {
+  padding: 40px 0;
+  width: 100%;
+}
+
+.customerWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.customerInfoContainer {
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  margin-top: 32px;
+}
+
+.customerInfoWrapper {
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 24px;
+  border-top: 2px solid #5393b3;
+  border-bottom: 2px solid #5393b3;
+  cursor: pointer;
+  padding: 16px;
+}
+
+.customerInfoWrapper:hover {
+  background-color: #336279;
+}
+
+.customerInfoDivider {
+  margin-bottom: 8px;
+}
+
+.customerModalInfoWrapper {
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  height: 85vh;
+  align-items: center;
+  gap: 12px;
+}
+
+.customerInfoLabel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.closeIcon {
+  cursor: pointer;
+  transition: all 150ms ease-in;
+}
+
+.closeIcon:hover {
+  transform: scale(0.8);
+}
+
+.pendingItemsWrapper {
+  margin: 24px 0px;
+}
+
+.customerModalEditInfoWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.customerModalInfoWrapper::-webkit-scrollbar {
+  width: 5px;
+}
+
+.customerModalInfoWrapper::-webkit-scrollbar-track {
+  border-radius: 999px;
+  background: lightgrey;
+}
+
+.customerModalInfoWrapper::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: #8cd4f9;
+}
+
+.tableDisplayContainer {
+  padding: 10px;
+  height: 300px;
+}
+
+.clientEyeTableInfoContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.clientEyeTableInfoWrapper {
+  flex: 1;
+  max-width: 45%;
+}
+
+.clientEyeTableInfo {
+  max-width: 560px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.clientEyeTableInfoLenses {
+  max-width: 350px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.tableRowContent {
+  color: white;
+  height: 50px;
+  display: flex;
+  max-width: 60px;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  border: 1px solid black;
+}
+
+.eyeglassesWrapper {
+  margin-bottom: 32px;
+}
+
+.rightLenseInfo,
+.leftLenseInfo,
+.frameInfo {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.rightLenseInfoWrapper,
+.rightLenseInfoWrapperLenses {
+  display: flex;
+  flex-direction: column;
+  gap: 114px;
+  margin-bottom: 33px;
+}
+
+.rightLenseInfoWrapper {
+  margin-top: 90px;
+}
+
+.paid {
+  margin-top: 12px;
+  color: rgb(108, 255, 108);
+}
+
+.notPaid {
+  margin-top: 12px;
+  color: rgb(244, 84, 84);
+}
+
+.frameInfo {
+  margin-bottom: 6px;
+}
+
+.searchCustomer {
+  padding: 8px;
+  font-size: 16px;
+  height: 30px;
+}
+
+.dropdown {
+  margin-top: 12px;
+}
+
+.dropdownContainerFrame,
+.dropdownContainer {
+  background-color: #5393b3;
+  position: absolute;
+  border-radius: 4px;
+  overflow-y: auto;
+  max-width: 130px;
+  margin-top: 12px;
+  z-index: 1000;
+  width: 100%;
+  top: 100%;
+}
+
+.dropdownContainer::-webkit-scrollbar,
+.modalTableWrapper::-webkit-scrollbar {
+  width: 5px;
+}
+
+.dropdownContainer::-webkit-scrollbar-track,
+.modalTableWrapper::-webkit-scrollbar-track {
+  border-radius: 999px;
+  background: lightgrey;
+}
+
+.dropdownContainer::-webkit-scrollbar-thumb,
+.modalTableWrapper::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: #8cd4f9;
+}
+
+.dropdownContent {
+  cursor: pointer;
+  padding: 12px;
+}
+
+.dropdownContent:hover {
+  background-color: #2c627d;
+}
+
+.searchLenseContainer {
+  display: flex;
+  width: 100%;
+  gap: 32px;
+  flex-direction: column;
+}
+
+.far,
+.near {
+  margin: 12px 0px;
+  text-decoration: underline;
+}
+
+.searchLenseWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 12px;
+  gap: 128px;
+}
+
+.searchLense {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  position: relative;
+}
+
+.searchFrameWrapper {
+  display: flex;
+  margin: 0px 12px;
+  gap: 32px;
+  position: relative;
+}
+
+.tableContainer {
+  display: flex;
+}
+
+.tableInputWrapper {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  padding: 12px;
+  grid-gap: 0px;
+}
+
+.tableRowInputContent,
+.tableRowDisplayContent {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 60px;
+  padding: 4px;
+  border: 1px solid black;
+}
+
+.tablePicker,
+.editingButtons {
+  display: flex;
+  gap: 32px;
+}
+
+.submitGlassesButton,
+.submitLensesButton,
+.completeOrderButton,
+.setGlassesButton,
+.setLensesButton,
+.completeButton,
+.editAmountPaid,
+.printTableLink,
+.editTableButton,
+.confirmAmountButton {
+  color: white;
+  background-color: #5393b3;
+  border: 1px solid #5393b3;
+  margin: 18px auto;
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 32px;
+  transition: all 150ms ease;
+}
+
+.editTableButton {
+  margin: 4px 0px;
+}
+
+.completeButton,
+.editAmountPaid {
+  margin: 16px 0px;
+}
+
+.submitGlassesButton:hover,
+.submitLensesButton:hover,
+.completeOrderButton:hover,
+.setGlassesButton:hover,
+.editTableButton:hover,
+.setLensesButton:hover,
+.completeButton:hover,
+.editAmountPaid:hover,
+.printTableLink:hover,
+.confirmAmountButton:hover {
+  background-color: transparent;
+  border: 1px solid #5393b3;
+  color: #5393b3;
+}
+
+.itemInfo {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  gap: 12px;
+}
+
+.customerInput,
+.customerInputFrame,
+.paymentInput {
+  padding: 12px 8px;
+  font-size: 16px;
+  height: 30px;
+}
+
+.paymentInput {
+  margin-right: 12px;
+}
+
+.customerInputFrame {
+  width: 49%;
+}
+
+.customerInput {
+  max-width: 175px;
+}
+
+.modalWrapper,
+.modalTableWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow-y: auto;
+  width: 1300px;
+  background-color: #1f4b62;
+  box-shadow: 24px;
+  color: white;
+  padding: 40px;
+}
+
+.modalTableWrapper {
+  height: 750px;
+  width: 1300px;
+  overflow-y: auto;
+}
+
+.editorOpener {
+  color: white;
+  font-size: 18px;
+}
+
+.on {
+  color: rgb(108, 255, 108);
+}
+
+.off {
+  color: red;
+}
+
+.editInput {
+  padding: 12px 8px;
+  font-size: 16px;
+  height: 30px;
+}
+
+.confirmCustomer,
+.deleteCustomer {
+  color: white;
+  background-color: #5393b3;
+  border: 1px solid #5393b3;
+  margin: 18px auto;
+  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 32px;
+  transition: all 150ms ease;
+}
+
+.confirmCustomer:hover,
+.deleteCustomer:hover {
+  background-color: transparent;
+  border: 1px solid #5393b3;
+  color: #5393b3;
+}
+
+.navEditor {
+  display: flex;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  margin-top: 12px;
+  border-top-color: #3498db;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

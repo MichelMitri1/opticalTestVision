@@ -1,0 +1,180 @@
+.salesContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  gap: 32px;
+  background-color: #3b7390;
+  margin: 0 auto;
+}
+
+.salesHeader {
+  color: white;
+}
+
+.salesSecondContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.salesWrapper {
+  border-top: 2px solid #5393b3;
+  border-bottom: 2px solid #5393b3;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.clientPurchaseContainer,
+.clientEditingContainer {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.clientDate {
+  color: white;
+}
+
+.editingInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.clientPurchaseContainer {
+  color: white;
+}
+
+.clientEditingContainer {
+  flex-direction: column;
+}
+
+.salesWrapper:hover {
+  background-color: #336279;
+}
+
+.clientInfoWrapper {
+  color: white;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.paid {
+  color: rgb(108, 255, 108);
+  margin-top: 12px;
+}
+
+.notPaid {
+  color: rgb(244, 84, 84);
+}
+
+.datePicker,
+.searchNameInput,
+.amountInput {
+  padding: 2px 4px;
+  font-size: 16px;
+}
+
+.react-datepicker-popper {
+  z-index: 1000;
+}
+
+.selectLabel {
+  color: white;
+}
+
+.selected {
+  color: white;
+}
+
+.option {
+  color: #5393b3;
+}
+
+.option:hover {
+  background-color: #b1e5ff;
+}
+
+.clientPurchaseContainer:hover {
+  background-color: #336279;
+}
+
+.clientPurchaseWrapper {
+  display: flex;
+  gap: 12x;
+  align-items: center;
+}
+.itemInfoWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.modalWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400;
+  background-color: #1f4b62;
+  box-shadow: 24;
+  color: white;
+  padding: 40px;
+}
+
+.editAmountPaid,
+.confirmAmountPaid,
+.resetButton,
+.editButton,
+.completeButton,
+.searchSaleByDateButton,
+.confirmAmountButton,
+.completeOrder {
+  color: white;
+  background-color: #5393b3;
+  border: 1px solid #5393b3;
+  margin: 0px 18px;
+  max-width: 200px;
+  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 32px;
+  transition: all 150ms ease;
+}
+
+.editAmountPaid:hover,
+.confirmAmountPaid:hover,
+.resetButton:hover,
+.editButton:hover,
+.completeButton:hover,
+.confirmAmountButton:hover,
+.completeOrder:hover {
+  background-color: transparent;
+  border: 1px solid #5393b3;
+  color: #5393b3;
+}
+
+.editAmountPaid {
+  margin-left: 12px;
+}
+.salesFirstContainer {
+  display: flex;
+  gap: 12px;
+}
+
+.dropdown {
+  border-radius: 4px;
+  background-color: white;
+  margin: 18px 0px;
+  font-size: 16px;
+  border: none;
+  width: 200px;
+  height: 30px;
+}

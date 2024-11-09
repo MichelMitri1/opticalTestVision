@@ -1,0 +1,107 @@
+.statsContainer {
+  min-height: 100vh;
+  background-color: #3b7390;
+}
+
+.statsWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 64px;
+  color: white;
+}
+
+.statsInfoWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  margin: 32px 0px;
+}
+
+.salesStats {
+  background-color: #5996b4;
+  overflow: auto;
+  height: 400px;
+  width: 400px;
+  border-radius: 4px;
+  padding: 24px;
+}
+
+.salesStats::-webkit-scrollbar {
+  width: 5px;
+}
+
+.salesStats::-webkit-scrollbar-track {
+  border-radius: 999px;
+  background: lightgrey;
+}
+
+.salesStats::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: #8cd4f9;
+}
+
+.salesWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 24px 0px;
+}
+
+.top3Items {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.mostSoldItems {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.salesStats {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.dropdown {
+  border-radius: 4px;
+  background-color: white;
+  margin: 18px 0px;
+  font-size: 16px;
+  border: none;
+  width: 200px;
+  height: 30px;
+}
+
+.datePicker {
+  border-radius: 4px;
+  background-color: white;
+  margin: 8px 0px;
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  width: 200px;
+  height: 30px;
+}
+
+.resetButton {
+  color: white;
+  background-color: #5393b3;
+  border: 1px solid #5393b3;
+  margin: 0px 18px;
+  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 32px;
+  transition: all 150ms ease;
+}
+
+.resetButton:hover {
+  background-color: transparent;
+  border: 1px solid #5393b3;
+  color: #5393b3;
+}

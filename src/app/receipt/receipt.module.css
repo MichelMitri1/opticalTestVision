@@ -1,0 +1,151 @@
+.receiptContainer {
+  min-height: 100vh;
+  color: white;
+  background-color: #3b7390;
+}
+
+.tableDisplayContainer {
+  display: grid;
+  padding: 10px;
+}
+
+.clientEyeTableInfoWrapper {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.tableRowContent {
+  color: white;
+  height: 50px;
+  display: flex;
+  max-width: 100px;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  border: 1px solid black;
+}
+
+.tableRowContentDisabled {
+  height: 50px;
+  border-top: none;
+}
+
+.receiptWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 64px;
+  align-items: center;
+}
+
+.receiptInfoWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.productDetailsHeader {
+  padding: 8px 0px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.productDetails,
+.productDetailsTotal,
+.productDetailsRemaining {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.depositsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.productDetailsTotal,
+.productDetailsRemaining {
+  border-top: 1px solid white;
+  padding-top: 8px;
+}
+
+.productDetailsRemaining {
+  border-top: none;
+}
+
+.printButton {
+  color: white;
+  border: 1px solid #5393b3;
+  background-color: #5393b3;
+  margin: 18px auto;
+  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 32px;
+  transition: all 150ms ease;
+}
+
+.printButton:hover {
+  background-color: transparent;
+  border: 1px solid #5393b3;
+  color: #5393b3;
+}
+
+@media print {
+  .printButton,
+  .navbarContainer {
+    display: none;
+  }
+
+  .receiptHeader {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .receiptSubheader,
+  .receiptEmail {
+    font-size: 14px;
+  }
+
+  .receiptWrapper {
+    page-break-after: always;
+    color: black;
+  }
+  .tableRowContent {
+    color: white;
+    height: 50px;
+    display: flex;
+    max-width: 46px;
+    font-size: 8px;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+    border: 1px solid black;
+  }
+
+  .receiptWrapper {
+    gap: 3px;
+  }
+
+  .receiptInfoWrapper {
+    font-size: 14px;
+  }
+
+  .productDetailsHeader {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+
+  .productDetailsTotal {
+    border-top: 1px solid black;
+    padding-top: 8px;
+  }
+
+  .tableRowContent {
+    color: black;
+  }
+
+  .doctorName {
+    font-size: 12px;
+  }
+}

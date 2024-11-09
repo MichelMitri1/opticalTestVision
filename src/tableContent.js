@@ -1,0 +1,50 @@
+export const tableContent = [
+  {
+    id: 1,
+    tableRow1: " ",
+    tableRow2: "Loin",
+    tableRow3: "Interm",
+    tableRow4: "Pres",
+  },
+  {
+    id: 2,
+    tableRow1: "Sphere",
+    tableRow2: "+3.00",
+    tableRow3: " ",
+    tableRow4: "+6.00",
+  },
+  {
+    id: 1,
+    tableRow1: "Cylin.",
+    tableRow2: "+0.50",
+    tableRow3: " ",
+    tableRow4: "+0.50",
+  },
+  {
+    id: 1,
+    tableRow1: "Axe",
+    tableRow2: "180",
+    tableRow3: " ",
+    tableRow4: "180",
+  },
+  {
+    id: 1,
+    tableRow1: "Add",
+    tableRow2: "+3.00",
+    tableRow3: " ",
+  },
+  {
+    id: 1,
+    tableRow1: "Prisme",
+    tableRow2: " ",
+    tableRow3: " ",
+    tableRow4: " ",
+  },
+  {
+    id: 1,
+    tableRow1: "Base",
+    tableRow2: " ",
+    tableRow3: " ",
+    tableRow4: " ",
+  },
+];

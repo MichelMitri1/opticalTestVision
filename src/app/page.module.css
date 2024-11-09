@@ -1,0 +1,161 @@
+.categoryInput,
+.itemInput,
+.identifyClientInput {
+  padding: 12px 8px;
+  font-size: 16px;
+}
+
+.headerContainer {
+  min-height: 100vh;
+  display: flex;
+  background-color: #3b7390;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.headerInfoWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px 128px;
+  gap: 48px;
+}
+
+.headerPara {
+  line-height: 1.5;
+  font-size: 18px;
+  max-width: 1200px;
+}
+
+.displayInfoWrapper {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+  width: 100%;
+  gap: 64px;
+}
+
+.customerInfoContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  margin: 64px 24px;
+}
+
+.infoWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #5393b3;
+  min-height: 200px;
+  min-width: 200px;
+  padding: 24px;
+  border-radius: 8px;
+  margin-top: 32px;
+}
+
+.category {
+  color: white;
+  margin-bottom: 8px;
+}
+
+.itemListWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item {
+  color: white;
+  cursor: pointer;
+}
+
+.addItemButton,
+.submitGlassesDegrees {
+  color: white;
+  background-color: #5393b3;
+  margin: 18px auto;
+  border: 1px solid #5393b3;
+  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 32px;
+  transition: all 150ms ease;
+}
+
+.addItemButton:hover,
+.submitGlassesDegrees:hover {
+  background-color: transparent;
+  border: 1px solid #5393b3;
+  color: #5393b3;
+}
+
+.headerButton {
+  color: white;
+  background-color: #5393b3;
+  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 32px;
+  transition: all 150ms ease;
+}
+
+.headerButton:hover {
+  background-color: transparent;
+  border: 1px solid #5393b3;
+  color: #5393b3;
+}
+
+.categoryOptionsWrapper {
+  cursor: pointer;
+  outline: none;
+  border-radius: 6px;
+  background-color: rgb(1, 50, 32);
+  color: rgb(96, 198, 161);
+}
+
+.infoWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #5393b3;
+  min-height: 200px;
+  min-width: 200px;
+  padding: 24px;
+  border-radius: 8px;
+}
+
+.customerInfoWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: rgb(1, 50, 32);
+  border-radius: 8px;
+  color: white;
+  padding: 32px;
+}
+
+.submitGlassesDegrees {
+  margin-top: 40px;
+}
+
+.boxStyle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #2b5367;
+  border: none;
+  width: 70%;
+  border-radius: 4px;
+  box-shadow: 24;
+  padding: 32px;
+}
+
+.identifyClientWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  color: white;
+}

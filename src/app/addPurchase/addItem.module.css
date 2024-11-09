@@ -1,0 +1,306 @@
+.itemsContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #3b7390;
+  gap: 12px;
+}
+
+.itemInput,
+.datePicker,
+.itemInputLarge,
+.itemInputSmall,
+.itemInputLast,
+.dropdown {
+  border-radius: 4px;
+  background-color: white;
+  margin: 18px 32px 32px 0px;
+  font-size: 16px;
+  border: none;
+  width: 200px;
+  height: 30px;
+}
+
+.itemInput,
+.datePicker,
+.itemInputLarge {
+  padding: 0px 8px;
+}
+
+.itemInputSmall,
+.itemInputLast {
+  width: 60px;
+  padding: 0px 8px;
+}
+
+.itemInputLarge {
+  width: 270px;
+}
+
+.dropdownLast {
+  border-radius: 4px;
+  background-color: white;
+  margin: 18px 0px 32px 0px;
+  font-size: 14px;
+  border: none;
+  width: 200px;
+  height: 30px;
+}
+
+.itemInputLast {
+  padding: 0px 8px;
+}
+
+.itemInput::placeholder {
+  opacity: 0.5;
+}
+
+.selectLabel {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.categorySelected {
+  color: white;
+}
+
+.categoryOption {
+  color: #5393b3;
+}
+
+.categoryOption:hover {
+  background-color: #b1e5ff;
+}
+
+.addItems {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.addItemButton,
+.editItemButton,
+.saveEditChangesButton {
+  color: white;
+  background-color: #5393b3;
+  border: 1px solid #5393b3;
+  margin: 4px 24px;
+  font-size: 14px;
+  padding: 4px 24px;
+  border-radius: 32px;
+  transition: all 150ms ease;
+}
+
+.addItemButton:hover,
+.editItemButton:hover,
+.saveEditChangesButton:hover {
+  background-color: transparent;
+  border: 1px solid #5393b3;
+  color: #5393b3;
+}
+
+.dropdownContainer {
+  overflow-y: auto;
+  border-radius: 4px;
+  max-height: 200px;
+  position: absolute;
+  z-index: 1000;
+  width: 200px;
+  background-color: #5393b3;
+}
+
+.dropdownContainer::-webkit-scrollbar {
+  width: 5px;
+}
+
+.dropdownContainer::-webkit-scrollbar-track {
+  border-radius: 999px;
+  background: lightgrey;
+}
+
+.dropdownContainer::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: #8cd4f9;
+}
+
+.dropdownContent {
+  color: white;
+  cursor: pointer;
+  padding: 12px;
+}
+
+.dropdownContent:hover {
+  background-color: #2c627d;
+}
+
+.itemsListedContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  margin-top: 64px;
+}
+
+.itemsListedWrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.itemsListed {
+  display: flex;
+  width: 100%;
+}
+
+.itemsListed:hover {
+  background-color: #2c627d;
+}
+
+.addItemInputsWrapper {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.editItemsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.editItemsWrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  gap: 16px;
+}
+
+.modalWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  overflow-y: auto;
+  width: 400;
+  background-color: #1f4b62;
+  box-shadow: 24;
+  color: white;
+  padding: 40px;
+}
+
+.modalWrapper::-webkit-scrollbar {
+  width: 5px;
+}
+
+.modalWrapper::-webkit-scrollbar-track {
+  border-radius: 999px;
+  background: lightgrey;
+}
+
+.modalWrapper::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: #8cd4f9;
+}
+
+.itemAddedInfo {
+  display: flex;
+  align-items: center;
+  border-right: 1px solid #5393b3;
+  border-left: 1px solid #5393b3;
+  width: 90px;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.itemName,
+.itemCode {
+  width: 220px;
+}
+
+.itemCodeCol,
+.itemNameCol,
+.itemPriceCol,
+.itemTotalCol,
+.invoiceNumberCol,
+.itemQtyCol,
+.itemDiscCol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #5393b3;
+  border-left: 1px solid #5393b3;
+  margin-top: 32px;
+  padding: 8px;
+}
+
+.itemPriceCol,
+.itemTotalCol,
+.invoiceNumberCol,
+.itemQtyCol,
+.itemDiscCol {
+  width: 90px;
+}
+
+.itemNameCol,
+.itemCodeCol {
+  width: 220px;
+}
+
+.purchaseLoc,
+.warehouse,
+.invoice,
+.currency,
+.date {
+  padding: 12px;
+}
+
+.itemsListedCol,
+.itemInfo {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.total {
+  margin-top: 64px;
+}
+
+.totalBeforeTax {
+  margin-top: 24px;
+}
+
+.noDisplay {
+  display: none;
+}
+
+.inputWrapper {
+  border-bottom: 2px solid white;
+}
+
+.inputLabel {
+  margin-top: 32px;
+  color: white;
+  font-size: 14px;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  margin-top: 12px;
+  border-top-color: #3498db;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

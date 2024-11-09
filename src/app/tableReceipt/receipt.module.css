@@ -1,0 +1,251 @@
+.receiptContainer {
+  min-height: 100vh;
+  color: white;
+  background-color: #3b7390;
+}
+
+.tableDisplayContainer {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.clientEyeTableInfo {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.clientEyeTableInfoContainer {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.clientEyeTableInfoLenses {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.eyeglassesWrapper {
+  margin-bottom: 32px;
+}
+
+.rightLenseInfo,
+.leftLenseInfo,
+.frameInfo {
+  display: flex;
+  align-items: center;
+}
+
+.frameInfo {
+  margin-bottom: 6px;
+}
+
+.far,
+.near {
+  margin: 12px 0px;
+  text-decoration: underline;
+}
+
+.tableRowContent {
+  color: white;
+  height: 55px;
+  display: flex;
+  max-width: 55px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.rightLenseInfoWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+  margin-bottom: 33px;
+}
+
+.rightLenseInfoWrapper {
+  margin-top: 90px;
+}
+
+.tableRowContentDisabled {
+  height: 50px;
+  border-top: none;
+}
+
+.receiptWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 64px;
+  align-items: center;
+}
+
+.receiptInfoWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.productDetailsHeader {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.productDetails,
+.productDetailsTotal {
+  display: flex;
+  justify-content: space-between;
+}
+
+.productDetailsTotal {
+  border-top: 1px solid white;
+  padding-top: 8px;
+}
+
+.receiptHeader {
+  margin-bottom: 8px;
+}
+
+.boughtItemsInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.printButton {
+  color: white;
+  background-color: #5393b3;
+  border: 1px solid #5393b3;
+  margin: 18px auto;
+  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 32px;
+  transition: all 150ms ease;
+}
+
+.printButton:hover {
+  background-color: transparent;
+  border: 1px solid #5393b3;
+  color: #5393b3;
+}
+
+.storeInfoWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid white;
+  max-width: 350px;
+  text-align: center;
+}
+
+.productDetailsWrapper {
+  border-bottom: 1px solid white;
+}
+
+.totalWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 350px;
+}
+
+.total,
+.productDetailsRemaining {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pdhtWrapper {
+  margin-bottom: 12px;
+}
+
+.htRight,
+.pdRight,
+.htLeft,
+.pdLeft {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+}
+
+.htValue,
+.pdValue {
+  border: 1px solid black;
+  text-align: center;
+}
+
+@media print {
+  .printButton,
+  .navbarContainer {
+    display: none;
+  }
+
+  .storeInfoWrapper {
+    border-bottom: 1px solid black;
+  }
+
+  .receiptHeader {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .receiptSubheader,
+  .receiptEmail {
+    font-size: 14px;
+  }
+
+  .receiptWrapper {
+    page-break-after: always;
+    margin-top: 0px;
+    color: black;
+  }
+
+  .tableRowContent {
+    color: white;
+    height: 45px;
+    display: flex;
+    max-width: 95px;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+    border: 1px solid black;
+  }
+
+  .receiptInfoWrapper,
+  .productDetailsRemaining,
+  .total {
+    font-size: 14px;
+  }
+
+  .productDetailsHeader {
+    font-size: 12px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+
+  .productDetailsTotal {
+    border-top: 1px solid black;
+    padding-top: 8px;
+  }
+
+  .productDetailsWrapper {
+    border-bottom: 1px solid black;
+  }
+
+  .infoWrapper {
+    max-width: 200px;
+  }
+
+  .tableRowContent {
+    color: black;
+  }
+
+  .doctorName {
+    font-size: 12px;
+  }
+
+  .boughtItemsInfo {
+    font-size: 12px;
+  }
+}

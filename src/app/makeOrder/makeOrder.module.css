@@ -1,0 +1,102 @@
+.orderFormContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: #3b7390;
+  padding-left: 12px;
+}
+
+.orderFormWrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  gap: 32px;
+  margin: 0 auto;
+}
+
+.orderFormRow {
+  display: flex;
+  gap: 16px;
+}
+
+.orderFormRow p {
+  color: white;
+}
+
+.orderInfo {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.taxRuleOptionsWrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+}
+
+.taxRuleOptions {
+  display: flex;
+  gap: 8px;
+}
+
+.genderOptions {
+  display: flex;
+  gap: 8px;
+}
+
+.taxLedgerOptions {
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 8px;
+}
+
+.taxRuleLabel {
+  color: white;
+}
+
+.submitOrder {
+  color: white;
+  background-color: #5393b3;
+  margin: 18px auto;
+  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 32px;
+  transition: all 150ms ease;
+}
+
+.submitOrder:hover {
+  background-color: transparent;
+  color: #5393b3;
+  border: 1px solid #5393b3;
+}
+
+.salesPersonSelected,
+.taxRuleSelected {
+  color: white;
+}
+
+.salesPersonOption,
+.taxRuleOption {
+  color: #5393b3;
+}
+
+.salesPersonOption:hover,
+.taxRuleOption:hover {
+  background-color: #b1e5ff;
+}
+.orderSelected {
+  color: #5393b3;
+}
+
+.selectLabel {
+  color: white;
+}
+
+.orderInput {
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  padding: 8px;
+}
